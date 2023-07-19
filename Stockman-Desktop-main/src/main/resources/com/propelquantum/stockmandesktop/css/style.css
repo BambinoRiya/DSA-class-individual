@@ -1,0 +1,62 @@
+.primary-blue {
+    -fx-background-color: #3A86FF;
+}
+
+.primary-violet {
+    -fx-background-color: #8338EC;
+}
+
+.primary-pink {
+    -fx-background-color: #FF006E;
+}
+
+.primary-orange {
+    -fx-background-color: #FB5607;
+}
+
+
+.primary-yellow {
+    -fx-background-color: #FFBE0B;
+}
+
+.navigation-button {
+     -fx-background-color: #8338EC;
+}
+
+.navigation-button:hover {
+    -fx-background-color: #3A86FF;
+}
+
+.heading-button {
+    -fx-background-color: #FB5607;
+}
+
+.heading-button:hover {
+     -fx-background-color: #3A86FF
+}
+
+.table-view .column-header {
+     -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#131313 0.0%, #424141 100.0%);
+}
+
+.table-view .column-header-background .label{
+     -fx-background-color: transparent;
+    -fx-font-weight:bold;
+    -fx-text-fill: white;
+}
+
+.table-view .table-column{
+    -fx-alignment:center;
+}
+
+.table-view .table-cell{
+    -fx-font-weight:bold;
+    -fx-font-size:13px;
+    /* -fx-text-fill:orange; */
+
+}
+

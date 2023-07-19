@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" styleClass="primary-blue" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.propelquantum.stockmandesktop.LoginController">
+   <children>
+      <AnchorPane layoutX="803.0" layoutY="84.0" prefHeight="600.0" prefWidth="400.0" styleClass="primary-violet" stylesheets="@css/style.css" AnchorPane.rightAnchor="150.0">
+         <children>
+            <TextField fx:id="usernameTextField" layoutX="50.0" layoutY="180.0" prefHeight="40.0" prefWidth="300.0" promptText="Enter Username" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="180.0">
+               <font>
+                  <Font name="Articulate" size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordField" layoutX="50.0" layoutY="250.0" prefHeight="40.0" prefWidth="300.0" promptText="Enter Password" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="250.0">
+               <font>
+                  <Font name="Articulate" size="15.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="160.0" layoutY="60.0" text="Sign in" textFill="WHITE" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="60.0">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="loginButton" layoutX="50.0" layoutY="319.0" onAction="#onLoginButtonClicked" prefHeight="40.0" prefWidth="300.0" styleClass="primary-blue" stylesheets="@css/style.css" text="Login" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="320.0">
+               <font>
+                  <Font name="Articulate" size="15.0" />
+               </font>
+            </JFXButton>
+            <Hyperlink layoutX="148.0" layoutY="562.0" text="Forgot Password?" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="148.0" AnchorPane.rightAnchor="148.0" />
+         </children></AnchorPane>
+      <Label layoutX="14.0" layoutY="737.0" text="Version 1.1.08" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+      <Label layoutX="1324.0" layoutY="728.0" text="propelquantum@gmail.com" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Label layoutX="1324.0" layoutY="14.0" text="Propel Quantum" textFill="WHITE" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3a86ff" height="200.0" layoutX="138.0" layoutY="160.0" stroke="#3a86ff" strokeType="INSIDE" width="200.0" AnchorPane.leftAnchor="138.0" AnchorPane.topAnchor="160.0" />
+      <Polygon fill="WHITE" layoutX="158.0" layoutY="252.0" points="-50.0, 40.0, 96.40000915527344, 235.19998168945312, 178.0, -166.39999389648438" stroke="WHITE" strokeType="INSIDE" AnchorPane.leftAnchor="108.0" AnchorPane.topAnchor="85.60000610351562" />
+      <Ellipse fill="#3a86ff" layoutX="203.0" layoutY="293.0" radiusX="100.0" radiusY="80.0" stroke="#3a86ff" strokeType="INSIDE" AnchorPane.leftAnchor="103.0" AnchorPane.topAnchor="213.0" />
+      <Label layoutX="228.0" layoutY="280.0" text="STOCKMAN" textFill="WHITE" AnchorPane.leftAnchor="228.0" AnchorPane.topAnchor="280.0">
+         <font>
+            <Font name="Articulate" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

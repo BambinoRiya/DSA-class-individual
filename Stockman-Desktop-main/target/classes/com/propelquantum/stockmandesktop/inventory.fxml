@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.propelquantum.stockmandesktop.InventoryController">
+   <children>
+      <AnchorPane layoutX="33.0" layoutY="23.0" prefHeight="100.0" prefWidth="1100.0" styleClass="primary-violet" stylesheets="@css/style.css" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="23.0">
+         <children>
+            <JFXButton layoutX="700.0" layoutY="30.0" onAction="#onSearchButtonClicked" prefHeight="40.0" prefWidth="122.0" styleClass="navigation-button" stylesheets="@css/style.css" text="Search" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="700.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="Articulate" size="15.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="searchTextField" layoutX="400.0" layoutY="30.0" prefHeight="40.0" prefWidth="300.0" promptText="Search By Name" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="30.0">
+               <font>
+                  <Font name="Articulate" size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <ScrollPane fitToWidth="true" layoutX="33.0" layoutY="151.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="150.0">
+         <content>
+            <FlowPane fx:id="flowPane" prefHeight="600.0" prefWidth="1100.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.propelquantum.stockmandesktop.Main2Controller">
+   <left>
+      <AnchorPane prefHeight="768.0" prefWidth="200.0" styleClass="primary-violet" stylesheets="@css/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton layoutY="150.0" onAction="#onDashboardButtonClicked" prefHeight="40.0" prefWidth="200.0" styleClass="navigation-button" stylesheets="@css/style.css" text="Dashboard" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+               <font>
+                  <Font name="Articulate" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="190.0" onAction="#onInventoryButtonClicked" prefHeight="40.0" prefWidth="200.0" styleClass="navigation-button" stylesheets="@css/style.css" text="Inventory" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="190.0">
+               <font>
+                  <Font name="Articulate" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="230.0" onAction="#onProductsButtonClicked" prefHeight="40.0" prefWidth="200.0" styleClass="navigation-button" stylesheets="@css/style.css" text="Products" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="230.0">
+               <font>
+                  <Font name="Articulate" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="270.0" onAction="#onCustomersButtonClicked" prefHeight="40.0" prefWidth="200.0" styleClass="navigation-button" stylesheets="@css/style.css" text="Customers" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="270.0">
+               <font>
+                  <Font name="Articulate" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="310.0" onAction="#onSuppliersButtonClicked" prefHeight="40.0" prefWidth="200.0" styleClass="navigation-button" stylesheets="@css/style.css" text="Supplier" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="310.0">
+               <font>
+                  <Font name="Articulate" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutY="350.0" onAction="#onExpenditureButtonClicked" prefHeight="40.0" prefWidth="200.0" styleClass="navigation-button" stylesheets="@css/style.css" text="Expenditure" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="350.0">
+               <font>
+                  <Font name="Articulate" size="15.0" />
+               </font>
+            </JFXButton>
+            <!--
+            <JFXButton layoutY="390.0" onAction="#onSettingsButtonClicked" prefHeight="40.0" prefWidth="200.0" styleClass="navigation-button" stylesheets="@css/style.css" text="Settings" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="390.0">
+               <font>
+                  <Font name="Articulate" size="15.0" />
+               </font>
+            </JFXButton>
+            -->
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="768.0" prefWidth="1166.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

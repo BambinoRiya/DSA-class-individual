@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.propelquantum.stockmandesktop.ProductController">
+    <children>
+        <AnchorPane layoutX="33.0" layoutY="23.0" prefHeight="100.0" prefWidth="1100.0" styleClass="primary-violet" stylesheets="@css/style.css" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="23.0">
+            <children>
+                <JFXButton layoutX="39.0" layoutY="30.0" onAction="#onAddProductButtonClicked" prefHeight="40.0" prefWidth="122.0" styleClass="navigation-button" stylesheets="@css/style.css" text="Add Product" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="30.0">
+                    <font>
+                        <Font name="Articulate" size="15.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="700.0" layoutY="30.0" onAction="#onSearchButtonClicked" prefHeight="40.0" prefWidth="122.0" styleClass="navigation-button" stylesheets="@css/style.css" text="Search" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="700.0" AnchorPane.topAnchor="30.0">
+                    <font>
+                        <Font name="Articulate" size="15.0" />
+                    </font>
+                </JFXButton>
+                <TextField fx:id="searchTextField" layoutX="400.0" layoutY="30.0" prefHeight="40.0" prefWidth="300.0" promptText="Search By Name" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="30.0">
+                    <font>
+                        <Font name="Articulate" size="15.0" />
+                    </font>
+                </TextField>
+            </children>
+        </AnchorPane>
+        <TableView fx:id="tableView" layoutX="33.0" layoutY="140.0" prefHeight="600.0" prefWidth="1100.0" stylesheets="@css/style.css" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="140.0">
+            <columns>
+                <TableColumn fx:id="idTableColumn" editable="false" maxWidth="100.0" minWidth="80.0" text="Id" />
+                <TableColumn fx:id="productNameTableColumn" editable="false" maxWidth="450.0" minWidth="350.0" prefWidth="350.0" sortable="false" text="Product Name" />
+                <TableColumn fx:id="productDescriptionTableColumn" editable="false" maxWidth="300.0" minWidth="250.0" prefWidth="250.0" sortable="false" text="Product Description" />
+                <TableColumn fx:id="pricePerUnitTableColumn" editable="false" maxWidth="250.0" minWidth="150.0" prefWidth="150.0" text="Price per Unit" />
+                <TableColumn fx:id="quantityInStockTableColumn" editable="false" maxWidth="200.0" minWidth="150.0" prefWidth="150.0" text="Quantity in Stock" />
+                <TableColumn fx:id="totalAmountTableColumn" editable="false" maxWidth="200.0" minWidth="120.0" prefWidth="120.0" text="Total Amount" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
